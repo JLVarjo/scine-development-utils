@@ -1,6 +1,45 @@
 Changelog
 =========
 
+Release 9.0.0
+-------------
+
+- Add CMake import for pugiXML
+- Add CMake import for SCINE Swoose
+- Add CMake import for Sundials
+- UpdateGoogleTest to 1.12.1
+
+Release 8.0.0
+-------------
+
+- Improve support for compilation on Windows (MSVC)
+- Update Pybind11 to version 2.10.4
+- Update address in license
+
+Release 7.0.0
+-------------
+
+- Use version 5.0.0 of Core
+- Use version 8.0.0 of Utilities
+- Use version 2.0.0 of Molassembler
+- Use version 1.2.0 of database wrapper
+- Use version 4.0.0 of Sparrow
+- Use version 2.0.0 of xtb wrapper
+
+Release 6.0.0
+-------------
+
+- Use version 7.0.0 of Utilities
+
+Release 5.1.0
+-------------
+
+- Add CMake import for Spglib
+- Add CMake import for JSON by nlohmann
+- Add some download helper functions
+- Update LBFGS++ to version 0.2
+- Various bugfixes and improvements
+
 Release 5.0.1
 -------------
 

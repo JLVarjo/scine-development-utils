@@ -1,6 +1,6 @@
 #
 # This file is licensed under the 3-clause BSD license.
-# Copyright ETH Zurich, Laboratory of Physical Chemistry, Reiher Group.
+# Copyright Department of Chemistry and Applied Biosciences, Reiher Group.
 # See LICENSE.txt for details.
 #
 
@@ -18,7 +18,6 @@ macro(target_lib_path target output)
     foreach(_build_type Debug;Release;MinSizeRel;RelWithDebInfo)
       string(TOUPPER "${_build_type}" _upper_build_type)
       get_target_property(_path_attempt ${target} "IMPORTED_LOCATION_${_upper_build_type}")
-	  
       if(_path_attempt)
         set(${output} ${_path_attempt})
         break()
@@ -34,7 +33,7 @@ macro(target_lib_path target output)
         unset(_path_attempt)
       endif()
     endif()
-
+    
     if(NOT DEFINED ${output})
       foreach(_build_type Debug;Release;MinSizeRel;RelWithDebInfo)
         string(TOUPPER "${_build_type}" _upper_build_type)
